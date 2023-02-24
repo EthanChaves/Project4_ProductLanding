@@ -31,7 +31,7 @@
               <a href="#career" class="nav-link">Career</a>
             </li>
             <li>
-              <a href="" class="nav-link last">Order Here</a>
+              <a href="#order" class="nav-link last">Order Here</a>
             </li>
           </ul>
         </nav>
@@ -63,16 +63,51 @@
               <i class="fab fa-youtube"></i>
             </a>
           </div>
-
         </div>
         <div id="career" class="container">
-          <h2>Work with Us!</h2>
+          <span class="inline">
+            <h2>Work with Us</h2>
+            <i class="fa fa-user"></i>
+          </span>
+            <p>Please fill our form with your personal information in order to be in contacto with you for the first job interview.</p>
+            <iframe
+              src="https://www.youtube.com/embed/ywrLSeDVH5U?mute=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+              id="video">
+            </iframe>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="first-name">First name: <input type="text" placeholder="Enter your first name" name="first-name" id="first-name" required></label>
+            <label for="last-name">Last name: <input type="text" placeholder="Enter your last name" name="last-name" id="last-name" required></label>
+            <label for="email">Email: <input type="email" placeholder="Enter your email" name="email" id="email" required></label>
+            <input type="submit" value="submit" id="submit">  
+          </form>
         </div>
-        <video src="" id="video"></video>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-          <input type="email" placeholder="Please enter your email" name="email" id="email">
-          <input type="submit" value="submit" id="submit">
-        </form>
+        <!--This part has no functions-->
+        <div id="order">
+          <h2>Order Here</h2>
+          <div class="pizza margherita">
+            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-margarita-1080x671.jpg" alt="A margherita pizza">
+            <h3>Margherita</h3>
+            <p class="price">$12</p>
+          </div>
+          <div class="pizza pepperoni">
+            <img src="https://placeralplato.com/files/2016/01/Pizza-con-pepperoni-640x480.jpg?width=1200&enable=upscale" alt="A pepperoni pizza">
+            <h3>Pepperoni</h3>
+            <p class="price">$13</p>
+          </div>
+          <div class="pizza supreme">
+            <img src="https://tuscaneats.com/wp-content/uploads/2022/02/supreme-pizza.jpg" alt="A supreme pizza">
+            <h3>Supreme</h3>
+            <p class="price">$17</p>
+          </div>
+          <div class="pizza mushrooms">
+            <img src="https://www.bacinos.com/wp-content/uploads/2021/06/31-Best-Mushroom-Pizza-Recipes.jpg" alt="A mushroom pizza">
+            <h3>Mushrooms</h3>
+            <p class="price">$15</p>
+          </div>
+        </div>
       </section>
     </main>
   </body>

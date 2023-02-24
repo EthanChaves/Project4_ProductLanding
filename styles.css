@@ -18,6 +18,7 @@ html {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px #000 solid;
+  z-index: 1;
 }
 
 #logo {
@@ -97,6 +98,7 @@ h2 {
 p {
   font-size: 1.15em;
   width: 800px;
+  margin: 6px 0;
 }
 
 #pizza1 {
@@ -125,6 +127,99 @@ p {
 
 .social-media a:visited {
   color: #000;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-user {
+  font-size: 2em;
+  color:rgb(174, 132, 26);
+  position: relative;
+  left: 20px;
+  bottom: 4px;
+}
+
+iframe {
+  width: 560px; 
+  height: 315px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#form label:first-of-type {
+  margin-top: 20px;
+}
+
+#form label {
+  margin: 6px 0;
+  display: block;
+}
+
+#form input {
+  width: 100%;
+  text-align: center;
+  height: 1.5em;
+}
+
+#form label {
+  width: 50%;
+}
+
+#form input[type="submit"] {
+  display: block;
+  background-color:rgb(174, 132, 26);
+  border: 3px white solid;
+  border-radius: 16px;
+  color: white;
+  width: 40%;
+  margin: 20px 0;
+  height: 2.2em;
+  font-size: 1.3em;
+  min-width: 300px;
+}
+
+#form input[type="submit"]:hover {
+  background-color: white;
+  border-color: rgb(174, 132, 26);
+  color:rgb(174, 132, 26);
+}
+
+.order {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza {
+  width: 25vw;
+  height: 60vh;
+  border: 2px #000 solid;
+}
+
+.pizza img {
+  width: 80%;
+}
+
+.margherita {
+  grid-column: 1/2}
+
+.pepperoni {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .bold {
