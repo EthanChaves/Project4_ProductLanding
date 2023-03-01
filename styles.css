@@ -17,8 +17,8 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px #000 solid;
   z-index: 1;
+  box-shadow: 0 0 10px rgb(64, 64, 64);
 }
 
 #logo {
@@ -147,6 +147,7 @@ p {
 iframe {
   width: 560px; 
   height: 315px;
+  border-radius: 16px;
 }
 
 #form {
@@ -190,36 +191,80 @@ iframe {
 }
 
 #form input[type="submit"]:hover {
-  background-color: white;
+  background-color: rgb(231, 231, 231);
   border-color: rgb(174, 132, 26);
   color:rgb(174, 132, 26);
 }
 
-.order {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+#order {
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 25px;
+}
+
+#order h2 {
+  grid-column: 1 / 3;
 }
 
 .pizza {
   width: 25vw;
   height: 60vh;
-  border: 2px #000 solid;
+  border-radius: 16px;
+  box-shadow: 0 0 5px rgb(64, 64, 64);
+  display: block;
 }
 
 .pizza img {
   width: 80%;
+  height: 200px;
+  margin-top: 25px;
+  object-fit: cover;
+}
+
+.pizza h3 {
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+
+.pizza .price {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.pizza button {
+  background-color:rgb(174, 132, 26);
+  border: 3px white solid;
+  border-radius: 16px;
+  color: white;
+  width: 40%;
+  margin-top: 30px;
+  height: 2.2em;
+  font-size: 1.3em;
+  min-width: 300px;
+}
+
+.pizza button:hover {
+  background-color: rgb(231, 231, 231);
+  border-color: rgb(174, 132, 26);
+  color:rgb(174, 132, 26);
 }
 
 .margherita {
-  grid-column: 1/2}
+  grid-column: 1 / 2;
+}
 
 .pepperoni {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 2 / 3;
+}
+
+.supreme {
+  grid-column: 1 / 2;
+}
+
+.mushrooms {
+  grid-column: 2 / 3;
 }
 
 .bold {
