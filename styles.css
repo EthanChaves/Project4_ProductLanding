@@ -1,0 +1,295 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+#header {
+  min-height: 100px;
+  width: 100%;
+  padding: 0 10px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0 0 10px rgb(64, 64, 64);
+}
+
+#logo {
+  max-width: 100px;
+  display: flex;
+  place-items: center;
+}
+
+#header-img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.space  {
+  width: 500px;
+}
+
+#nav-bar {
+  font-size: 1.5rem;
+}
+
+nav > ul {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  margin: 0 2vw;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none !important;
+  color: rgb(174, 132, 26) !important;
+  border-radius: 16px !important;
+  padding: 8px !important;
+}
+
+.last {
+  color: rgb(143, 98, 56) !important;
+  font-size: 1.2em;
+  font-weight: bold !important;
+  border: 3px rgb(143, 98, 56) dashed !important;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: rgba(128, 128, 128, 0.341) !important;
+}
+
+.last:hover {
+  background-color: rgba(218, 165, 32, 0.319) !important;
+  border: 3px rgb(143, 98, 56) solid !important;
+}
+
+#body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(174, 132, 26);
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.15em;
+  margin: 6px 0;
+  padding: 0 40px;
+}
+
+#pizza1 {
+  margin: 25px 0;
+  width: 60%;
+  object-fit: fill;
+}
+
+.social-media {
+  font-size: 2em;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #000;
+}
+
+.social-media a:link {
+  color: #000;
+}
+
+.social-media a:visited {
+  color: #000;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-user {
+  font-size: 2em;
+  color:rgb(174, 132, 26);
+  position: relative;
+  left: 20px;
+  bottom: 4px;
+}
+
+iframe {
+  width: 50%; 
+  height: 315px;
+  border-radius: 16px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#form label:first-of-type {
+  margin-top: 20px;
+}
+
+#form label {
+  margin: 6px 0;
+  display: block;
+}
+
+#form input {
+  width: 100%;
+  text-align: center;
+  height: 1.5em;
+}
+
+#form label {
+  width: 50%;
+}
+
+#form input[type="submit"] {
+  display: block;
+  background-color:rgb(174, 132, 26);
+  border: 3px white solid;
+  border-radius: 16px;
+  color: white;
+  width: 40%;
+  margin: 20px 0;
+  height: 2.2em;
+  font-size: 1.3em;
+  min-width: 300px;
+}
+
+#form input[type="submit"]:hover {
+  background-color: rgb(231, 231, 231);
+  border-color: rgb(174, 132, 26);
+  color:rgb(174, 132, 26);
+}
+
+#order {
+  max-width: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 25px;
+}
+
+#order h2 {
+  grid-column: 1 / 3;
+}
+
+.pizza {
+  width: 350px;
+  height: 450px;
+  border-radius: 16px;
+  box-shadow: 0 0 5px rgb(64, 64, 64);
+  display: block;
+}
+
+.pizza img {
+  width: 80%;
+  height: 200px;
+  margin-top: 25px;
+  object-fit: cover;
+}
+
+.pizza h3 {
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+
+.pizza .price {
+  font-size: 1.3em;
+}
+
+.pizza button {
+  background-color:rgb(174, 132, 26);
+  border: 3px white solid;
+  border-radius: 16px;
+  color: white;
+  width: 40%;
+  margin-top: 30px;
+  height: 2.2em;
+  font-size: 1.3em;
+  min-width: 300px;
+}
+
+.pizza button:hover {
+  background-color: rgb(231, 231, 231);
+  border-color: rgb(174, 132, 26);
+  color:rgb(174, 132, 26);
+}
+
+.margherita, .supreme, .hawaiian {
+  grid-column: 1 / 2;
+}
+
+.pepperoni, .mushrooms, .vegan {
+  grid-column: 2 / 3;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 840px) {
+  .space  {
+    width: 1px;
+  }
+
+  a {
+    font-size: 0.8em;
+  }
+  
+  .last {
+    font-size: 1em;
+  }
+  
+  #order {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .margherita, .supreme, .hawaiian {
+    grid-column: 1 / 2;
+  }
+  
+  .pepperoni, .mushrooms, .vegan {
+    grid-column: 1 / 2;
+  }
+}

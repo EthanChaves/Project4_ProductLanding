@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Product Landing</title>
+  </head>
+  <body id="first">
+    <main>
+      <header id="header">
+        <div id="logo">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/011/157/909/original/pizzeria-emblem-on-blackboard-pizza-logo-template-emblem-for-cafe-restaurant-or-food-delivery-service-vector.jpg"
+            alt="Pizzeria logo"
+            loading="lazy"
+            id="header-img"
+          />
+        </div>
+        <div class="space"></div>
+        <!--ID's are changed and located in a different elements beacuse there was a bug navigating into sections but now it's solved with this changes-->
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a href="#first" class="nav-link">Information</a>
+            </li>
+            <li>
+              <a href="#second" class="nav-link">Career</a>
+            </li>
+            <li>
+              <a href="#submit" class="nav-link last">Order Here</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section id="body">
+        <div id="information" class="container">
+          <h2>Our Restaurant</h2>
+          <p>This restaurant has been working and our recipe is intact since 1987. We used the best and most fresh ingredients to give you best gastronomic experiences.</p>
+          <img
+            id="pizza1"
+            src="https://images.hola.com/imagenes/cocina/recetas/20220208204252/pizza-pepperoni-mozzarella/1-48-890/pepperoni-pizza-abob-t.jpg"
+            alt="Pizza sample"
+          />
+          <p><span class="bold">Ubication:</span> Heredia, Costa Rica</p>
+          <p><span class="bold">Phone:</span> (+506) 2588-4756</p>
+          <p><span class="bold">Our Social Media:</span></p>
+          <!-- This isn't a real page, so any of this links guides you to an specific page -->
+          <div class="social-media" id="second">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div id="career" class="container">
+          <span class="inline">
+            <h2>Work with Us</h2>
+            <i class="fa fa-user"></i>
+          </span>
+            <p>Please fill our form with your personal information in order to be in contacto with you for the first job interview.</p>
+            <iframe
+              src="https://www.youtube.com/embed/ywrLSeDVH5U?mute=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+              id="video">
+            </iframe>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="first-name">First name: <input type="text" placeholder="Enter your first name" name="first-name" id="first-name" required></label>
+            <label for="last-name">Last name: <input type="text" placeholder="Enter your last name" name="last-name" id="last-name" required></label>
+            <label for="email">Email: <input type="email" placeholder="Enter your email" name="email" id="email" required></label>
+            <input type="submit" value="submit" id="submit">  
+          </form>
+        </div>
+        <!--This part has no functions-->
+        <div id="order">
+          <h2>Order Here</h2>
+          <div class="pizza margherita">
+            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-margarita-1080x671.jpg" alt="A margherita pizza">
+            <h3>Margherita</h3>
+            <p class="price">$12</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="pizza pepperoni">
+            <img src="https://placeralplato.com/files/2016/01/Pizza-con-pepperoni-640x480.jpg?width=1200&enable=upscale" alt="A pepperoni pizza">
+            <h3>Pepperoni</h3>
+            <p class="price">$13</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="pizza supreme">
+            <img src="https://tuscaneats.com/wp-content/uploads/2022/02/supreme-pizza.jpg" alt="A supreme pizza">
+            <h3>Supreme</h3>
+            <p class="price">$17</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="pizza mushrooms">
+            <img src="https://www.bacinos.com/wp-content/uploads/2021/06/31-Best-Mushroom-Pizza-Recipes.jpg" alt="A mushroom pizza">
+            <h3>Mushrooms</h3>
+            <p class="price">$15</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="pizza hawaiian">
+            <img src="https://napolicartagena.com/wp-content/uploads/2022/01/La-Pizza-Hawaiana-de-Canada.jpg" alt="A pizza with pineapple">
+            <h3>Hawaiian</h3>
+            <p class="price">$13</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="pizza vegan">
+            <img src="https://sivarious.com/wp-content/uploads/2018/10/Pizza-vegana.jpg" alt="A vegan pizza">
+            <h3>Margherita</h3>
+            <p class="price">$12</p>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
