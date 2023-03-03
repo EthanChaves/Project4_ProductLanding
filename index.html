@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Product Landing</title>
   </head>
-  <body>
+  <body id="first">
     <main>
       <header id="header">
         <div id="logo">
@@ -22,16 +22,17 @@
           />
         </div>
         <div class="space"></div>
+        <!--ID's are changed and located in a different elements beacuse there was a bug navigating into sections but now it's solved with this changes-->
         <nav id="nav-bar">
           <ul>
             <li>
-              <a href="#information" class="nav-link">Information</a>
+              <a href="#first" class="nav-link">Information</a>
             </li>
             <li>
-              <a href="#career" class="nav-link">Career</a>
+              <a href="#second" class="nav-link">Career</a>
             </li>
             <li>
-              <a href="#order" class="nav-link last">Order Here</a>
+              <a href="#submit" class="nav-link last">Order Here</a>
             </li>
           </ul>
         </nav>
@@ -49,7 +50,7 @@
           <p><span class="bold">Phone:</span> (+506) 2588-4756</p>
           <p><span class="bold">Our Social Media:</span></p>
           <!-- This isn't a real page, so any of this links guides you to an specific page -->
-          <div class="social-media">
+          <div class="social-media" id="second">
             <a href="https://www.facebook.com" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
@@ -109,6 +110,18 @@
             <img src="https://www.bacinos.com/wp-content/uploads/2021/06/31-Best-Mushroom-Pizza-Recipes.jpg" alt="A mushroom pizza">
             <h3>Mushrooms</h3>
             <p class="price">$15</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="pizza hawaiian">
+            <img src="https://napolicartagena.com/wp-content/uploads/2022/01/La-Pizza-Hawaiana-de-Canada.jpg" alt="A pizza with pineapple">
+            <h3>Hawaiian</h3>
+            <p class="price">$13</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="pizza vegan">
+            <img src="https://sivarious.com/wp-content/uploads/2018/10/Pizza-vegana.jpg" alt="A vegan pizza">
+            <h3>Margherita</h3>
+            <p class="price">$12</p>
             <button>Add to cart</button>
           </div>
         </div>
